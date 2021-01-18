@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import colors from 'colors';
 import morgan from 'morgan';
+import newsapi from 'newsapi';
 import covidRoute from './routes/covidRoute.js';
 dotenv.config();
 

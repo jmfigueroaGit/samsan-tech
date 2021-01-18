@@ -23,7 +23,29 @@ export const getCovidData = asyncHandler(async (req, res) => {
             });
         } else {
             res.status(404);
-            throw new Error('User not found');
+            throw new Error('API not found');
+        }
+    } catch (err) {
+        console.error(err);
+    }
+});
+
+// @desc    Get covid news related
+// @route   GET /api/covid/news
+// @access  Public
+export const getNewsData = asyncHandler(async (req, res) => {
+    try {
+        const data = await fetch(
+            `http://newsapi.org/v2/top-headlines?country=ph&category=health&q=covid&apiKey=${process.env.NEWS_API}`
+        );
+
+        const news = await data.json();
+
+        if (news) {
+            res.json(news);
+        } else {
+            res.status(404);
+            throw new Error('API not found');
         }
     } catch (err) {
         console.error(err);
