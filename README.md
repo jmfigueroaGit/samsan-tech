@@ -12,3 +12,13 @@
 
 ###### news-api
 https://newsapi.org/s/philippines-news-api
+
+
+# Installation
+git init
+git clone https://github.com/jmfigueroaGit/samsan-tech.git
+npm install
+
+###### Run Server
+npm run server
+
