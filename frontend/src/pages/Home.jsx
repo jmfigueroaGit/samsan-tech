@@ -108,7 +108,18 @@ const Home = () => {
             <pre>Guidelines</pre>
             <h3>Health Protocols</h3>
           </div>
-          <div className="content">{/* TODO: Guidelines Content */}</div>
+          <div className="content">
+            <h3>To read the official documentation of DOH</h3>
+            {/* Guidelines Content */}
+            <h3>
+              <a
+                href="https://www.covid19.gov.ph/frequently-asked-questions"
+                target="_blank"
+              >
+                Click here.
+              </a>
+            </h3>
+          </div>
         </div>
       </div>
     </div>

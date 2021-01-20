@@ -1,0 +1,28 @@
+.footer-container {
+  background: $whitesmoke;
+
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+
+  .footer {
+    width: 80%;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .socials {
+    & > * {
+      margin-bottom: 2vh;
+    }
+  }
+
+  .contact {
+    & > * {
+      margin-bottom: 2vh;
+    }
+  }
+}
